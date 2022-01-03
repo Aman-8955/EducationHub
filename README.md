@@ -1,3 +1,3 @@
 ## For watch this site click here
 
-https://huntgamer.github.io/EducationHub/
+https://aman-8955.github.io/EducationHub/
