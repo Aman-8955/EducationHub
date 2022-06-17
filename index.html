@@ -16,7 +16,7 @@
         }
 
         body {
-            background-image: linear-gradient(to bottom right,rgba(0, 0, 0, 0.3),rgba(0, 0, 0)),url("images/mainbg.jpg");
+            background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0)), url("images/mainbg.jpg");
             background-attachment: fixed;
             background-repeat: no-repeat;
             background-position: center center;
@@ -79,13 +79,24 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="\">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="youtube.html">Youtube</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="instagram.html">Instagram</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Document</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                 </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
             </div>
         </div>
     </nav>
@@ -102,36 +113,7 @@
                 Best Content From Youtube Instagram etc.
             </p>
         </div>
-        <div><button type="button" class="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">START</button>
-        </div>
-    </div>
-    <!-- Modal -->
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">Sign in</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" required autocomplete="current-password">
-                            <p style="color: rgb(204, 51, 51);font-weight: 600;display: none;" id="wrong">Invalid Password</p>
-                        </div>
-                        <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="show">
-                            <label class="form-check-label">Show</label>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary" id="submit">Submit</button>
-                </div>
-            </div>
+        <div><a href="youtube.html"><button type="button" class="button">START</button></a>
         </div>
     </div>
     <!-- script tags of bootstrap-->
@@ -140,30 +122,30 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
-        let submit = document.getElementById("submit");
-        let input = document.getElementById("exampleInputPassword1");
-        submit.addEventListener('click', () => {
-            let inputval=input.value;
-            let pass = "BCA";
-            let wrong=document.getElementById("wrong")
-            inputval = inputval.toUpperCase();
-            if (inputval == pass) {
-                window.location.href = "youtube.html";
-            }
-            else{
-                wrong.style.display="block";
-            }
-        });
-        let show=document.getElementById("show");
-        show.addEventListener('change',(e)=>{
-            if(e.target.checked){
-                console.log("checked");
-                input.setAttribute("type","input");   
-            }
-            else{
-                input.setAttribute("type","password");
-            }
-        });
+        // let submit = document.getElementById("submit");
+        // let input = document.getElementById("exampleInputPassword1");
+        // function pagego(){
+        //     let inputval = input.value;
+        //     let pass = "BCA";
+        //     let wrong = document.getElementById("wrong")
+        //     inputval = inputval.toUpperCase();
+        //     if (inputval == pass) {
+        //         window.location.href = "youtube.html";
+        //     }
+        //     else {
+        //         wrong.style.display = "block";
+        //     }
+        // }
+        // submit.addEventListener('click',pagego);
+        // let show = document.getElementById("show");
+        // show.addEventListener('change', (e) => {
+        //     if (e.target.checked) {
+        //         input.setAttribute("type", "input");
+        //     }
+        //     else {
+        //         input.setAttribute("type", "password");
+        //     }
+        // });
     </script>
 
 </body>
