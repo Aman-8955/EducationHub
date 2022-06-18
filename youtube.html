@@ -37,8 +37,47 @@
       color: #fff;
       background-color: #dc3545;
     }
+
     .back {
       background-color: floralwhite;
+    }
+
+    .card-deg {
+      box-shadow: inset 0px -1px 10px 1px black;
+      padding: 30px;
+      border-radius: 20px;
+      background-color: white;
+    }
+
+    .card-title {
+      color: #404ef1;
+      font-weight: 700;
+      margin-left: 20px !important;
+    }
+
+    .my-btn {
+      width: fit-content;
+      height: fit-content;
+      position: absolute;
+      right: 0px;
+      transform: translate(-40%, -25%);
+      background-color: white;
+      color: #ffffff;
+      border: none;
+      outline: none;
+      border-radius: 8px;
+      padding: 0.7% 20px;
+      font-weight: 700;
+      background-color: #5B63B7;
+    }
+
+    .accordion-item {
+      margin-top: 30px !important;
+    }
+
+    .channel-info-button {
+      color: #404ef1 !important;
+      font-size: 1.1rem;
     }
   </style>
   <title>EducationHub | All_About-Tech,Youtube,instagram etc.</title>
@@ -58,29 +97,29 @@
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
           <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Youtube</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="instagram.html">Instagram</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Document</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-      </ul>
+            <a class="nav-link active" aria-current="page" href="#">Youtube</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="instagram.html">Instagram</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Document</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
       </div>
     </div>
   </nav>
   <!-- carousel is here-->
-  <div class="slider">
+  <div class="slider mt-3 mb-3 container-fluid">
     <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -90,7 +129,7 @@
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
           aria-label="Slide 3"></button>
       </div>
-      <div class="carousel-inner">
+      <div class="carousel-inner border border-dark border-5">
         <div class="carousel-item active">
           <img src="images/f_1.jpg" class="d-block w-100" alt="...">
         </div>
@@ -114,31 +153,32 @@
     </div>
   </div>
   <!-- youtube channel links -->
-  <div>
+  <div class="container-fluid">
     <div class="card border-dark" style="width:100%;">
-      <div class="card-header" style="background-color: rgb(170, 169, 169); font-weight: 800;"><span
-          style="font-family: 'Readex Pro', sans-serif;" class="h1 text-dark d-flex justify-content-center"><u>YouTube</u></span>
+      <div class="card-header" style="background-color: rgba(230, 230, 230, 0.774); font-weight: 800;"><span
+          style="font-family: 'Readex Pro', sans-serif; color: #5B63B7 !important;"
+          class="h1 text-dark d-flex justify-content-center"><u>YouTube</u></span>
       </div>
-      <div class="card-body text-dark back">
+      <div class="card-body text-dark back"
+        style="background-image:linear-gradient(100deg,#000000,#CBCCFF,#9296F0,#5B63B7);">
         <div class="accordion" id="accordionExample">
           <!-- CodeWithHarry -->
-          <div class="mt-4 grad" id="codewithharry">
+          <div class="mt-4 card-deg" id="codewithharry">
+            <a href="https://www.youtube.com/c/ApnaCollegeOfficial"><button class="my-btn">Get</button></a>
             <img id="img" class="style-scope yt-img-shadow" alt=""
               src="https://yt3.ggpht.com/ytc/AKedOLT3EnMXtIOvDT4CL7obl0-acSZCBhMuapXBQFksVQ=s88-c-k-c0x00ffffff-no-rj">
             <h3 class="d-inline mx-2 card-title">CodeWithHarry</h3>
-            <p class="h4 mt-2 card-text">Link:- <a href="https://www.youtube.com/c/CodeWithHarry"
-                target="_blank">https://www.youtube.com/c/CodeWithHarry</a></p>
             <!-- channel information -->
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
-                <button class="h1 accordion-button collapsed border border-dark bg-success text-light" type="button"
+                <button class="h1 accordion-button collapsed channel-info-button" type="button"
                   data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
                   aria-controls="collapseOne">
                   Channel Info
                 </button>
               </h2>
-              <div id="collapseOne" class="border border-dark border-top-0 accordion-collapse collapse"
-                aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   <button type="button" class="info mybtn">Hindi language</button>
                   <button type="button" class="info mybtn">Programming,Web,DSA etc.</button>
@@ -148,23 +188,23 @@
             </div>
           </div>
           <!-- Apna College -->
-          <div class="mt-5" data-aos="fade-down" id="apnacollege">
+          <div class="mt-5 card-deg" data-aos="fade-down" id="apnacollege">
+            <a href="https://www.youtube.com/c/ApnaCollegeOfficial"><button class="my-btn">Get</button></a>
             <img id="img" class="style-scope yt-img-shadow" alt=""
               src="https://yt3.ggpht.com/ytc/AKedOLTyYyoVRhy94ZBqI9r0T9EkGsVo3JtWCXoUy8ZA=s88-c-k-c0x00ffffff-no-rj">
             <h3 class="d-inline mx-2 card-title">Apna College</h3>
-            <p class="h4 mt-2 card-text">Link:- <a href="https://www.youtube.com/c/ApnaCollegeOfficial"
-                target="_blank">https://www.youtube.com/c/ApnaCollegeOfficial</a></p>
+
             <!-- channel information -->
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingTwo">
-                <button class="h1 accordion-button collapsed border border-dark bg-success text-light" type="button"
+                <button class="h1 accordion-button collapsed channel-info-button" type="button"
                   data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
                   aria-controls="collapseTwo">
                   Channel Info
                 </button>
               </h2>
-              <div id="collapseTwo" class="border border-dark border-top-0 accordion-collapse collapse"
-                aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   <button type="button" class="info mybtn">Hindi language</button>
                   <button type="button" class="info mybtn">C++,JAVA,Web etc.</button>
@@ -174,23 +214,22 @@
             </div>
           </div>
           <!-- Neso Academy -->
-          <div class="mt-5" data-aos="fade-down" id="nesoacademy">
+          <div class="mt-5 card-deg" data-aos="fade-down" id="nesoacademy">
+            <a href="https://www.youtube.com/c/nesoacademy"><button class="my-btn">Get</button></a>
             <img id="img" class="style-scope yt-img-shadow" alt=""
               src="https://yt3.ggpht.com/ytc/AKedOLS6ix06LgBU3BDeogUH0KQhblvxM6FV-kZvI_3R=s88-c-k-c0x00ffffff-no-rj">
             <h3 class="d-inline mx-2 card-title">Neso Academy</h3>
-            <p class="h4 mt-2 card-text">Link:- <a href="https://www.youtube.com/c/nesoacademy"
-                target="_blank">https://www.youtube.com/c/nesoacademy</a></p>
             <!-- channel information -->
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingThree">
-                <button class="h1 accordion-button collapsed border border-dark bg-success text-light" type="button"
+                <button class="h1 accordion-button collapsed channel-info-button" type="button"
                   data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
                   aria-controls="collapseThree">
                   Channel Info
                 </button>
               </h2>
-              <div id="collapseThree" class="border border-dark border-top-0 accordion-collapse collapse"
-                aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   <button type="button" class="info mybtn">English language</button>
                   <button type="button" class="info mybtn">Programming,All-Tech-Subjects,Web etc.</button>
@@ -200,23 +239,22 @@
             </div>
           </div>
           <!-- Anuj Bhaiya -->
-          <div class="mt-5" data-aos="fade-down" id="AnujBhaiya">
+          <div class="mt-5 card-deg" data-aos="fade-down" id="AnujBhaiya">
+            <a href="https://www.youtube.com/c/AnujBhaiya"><button class="my-btn">Get</button></a>
             <img id="img" class="style-scope yt-img-shadow" alt=""
               src="https://yt3.ggpht.com/ytc/AKedOLRLiaa4P2JkseBtgCkK5V-RbkQGwBTWzl824553=s88-c-k-c0x00ffffff-no-rj">
             <h3 class="d-inline mx-2 card-title">Anuj Bhaiya</h3>
-            <p class="h4 mt-2 card-text">Link:- <a href="https://www.youtube.com/c/AnujBhaiya"
-                target="_blank">https://www.youtube.com/c/AnujBhaiya</a></p>
             <!-- channel information -->
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingFour">
-                <button class="h1 accordion-button collapsed border border-dark bg-success text-light" type="button"
+                <button class="h1 accordion-button collapsed channel-info-button" type="button"
                   data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
                   aria-controls="collapseFour">
                   Channel Info
                 </button>
               </h2>
-              <div id="collapseFour" class="border border-dark border-top-0 accordion-collapse collapse"
-                aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   <button type="button" class="info mybtn">Hindi language</button>
                   <button type="button" class="info mybtn">Programming,Developer-Life-Information,Web etc.</button>
@@ -226,23 +264,22 @@
             </div>
           </div>
           <!-- freeCodeCamp.org-->
-          <div class="mt-5" data-aos="fade-down" id="freeCodeCamp.org">
+          <div class="mt-5 card-deg" data-aos="fade-down" id="freeCodeCamp.org">
+            <a href="https://www.youtube.com/c/Freecodecamp"><button class="my-btn">Get</button></a>
             <img id="img" class="style-scope yt-img-shadow" alt=""
               src="https://yt3.ggpht.com/ytc/AKedOLTtJvQ1Vfew91vemeLaLdhjOwGx3tTBLlreK_QUyA=s88-c-k-c0x00ffffff-no-rj">
             <h3 class="d-inline mx-2 card-title">freeCodeCamp.org</h3>
-            <p class="h4 mt-2 card-text">Link:- <a href="https://www.youtube.com/c/Freecodecamp"
-                target="_blank">https://www.youtube.com/c/Freecodecamp</a></p>
             <!-- channel information -->
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingFive">
-                <button class="h1 accordion-button collapsed border border-dark bg-success text-light" type="button"
+                <button class="h1 accordion-button collapsed channel-info-button" type="button"
                   data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
                   aria-controls="collapseFive">
                   Channel Info
                 </button>
               </h2>
-              <div id="collapseFive" class="border border-dark border-top-0 accordion-collapse collapse"
-                aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   <button type="button" class="info mybtn">English language</button>
                   <button type="button" class="info mybtn">Programming,All-Tech-Information,Web etc.</button>
@@ -252,23 +289,23 @@
             </div>
           </div>
           <!-- Easy Tutorials -->
-          <div class="mt-5" data-aos="fade-down" id="Easy Tutorials">
+          <div class="mt-5 card-deg" data-aos="fade-down" id="Easy Tutorials">
+            <a href="https://www.youtube.com/c/EasyTutorialsVideo"><button class="my-btn">Get</button></a>
             <img id="img" class="style-scope yt-img-shadow" alt=""
               src="https://yt3.ggpht.com/ytc/AKedOLTST4S8KSU8IRIaj9_X4kTUR4KEnNtSE9lgXkBovw=s88-c-k-c0x00ffffff-no-rj">
             <h3 class="d-inline mx-2 card-title">Easy Tutorials</h3>
-            <p class="h4 mt-2 card-text">Link:- <a href="https://www.youtube.com/c/EasyTutorialsVideo"
-                target="_blank">https://www.youtube.com/c/EasyTutorialsVideo</a></p>
+            
             <!-- channel information -->
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingSix">
-                <button class="h1 accordion-button collapsed border border-dark bg-success text-light" type="button"
+                <button class="h1 accordion-button collapsed channel-info-button" type="button"
                   data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false"
                   aria-controls="collapseSix">
                   Channel Info
                 </button>
               </h2>
-              <div id="collapseSix" class="border border-dark border-top-0 accordion-collapse collapse"
-                aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+              <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   <button type="button" class="info mybtn">English language</button>
                   <button type="button" class="info mybtn">Style,HTML,CSS,JS,Web etc.</button>
@@ -278,23 +315,23 @@
             </div>
           </div>
           <!-- Online Tutorials -->
-          <div class="mt-5" data-aos="fade-down" id="Online Tutorials">
+          <div class="mt-5 card-deg" data-aos="fade-down" id="Online Tutorials">
+            <a href="https://www.youtube.com/c/OnlineTutorials4Designers"><button class="my-btn">Get</button></a>
             <img id="img" class="style-scope yt-img-shadow" alt=""
               src="https://yt3.ggpht.com/ytc/AKedOLQGJzANzs2ymcXNw3LKBSpQj9EpJojb5a6JY6oPlQ=s88-c-k-c0x00ffffff-no-rj">
             <h3 class="d-inline mx-2 card-title">Online Tutorials</h3>
-            <p class="h4 mt-2 card-text">Link:- <a href="https://www.youtube.com/c/OnlineTutorials4Designers"
-                target="_blank">https://www.youtube.com/c/OnlineTutorials4Designers</a></p>
+           
             <!-- channel information -->
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingSeven">
-                <button class="h1 accordion-button collapsed border border-dark bg-success text-light" type="button"
+                <button class="h1 accordion-button collapsed channel-info-button" type="button"
                   data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false"
                   aria-controls="collapseSeven">
                   Channel Info
                 </button>
               </h2>
-              <div id="collapseSeven" class="border border-dark border-top-0 accordion-collapse collapse"
-                aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+              <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   <button type="button" class="info mybtn">English language</button>
                   <button type="button" class="info mybtn">Style,HTML,CSS,JS,Web etc.</button>
@@ -304,23 +341,23 @@
             </div>
           </div>
           <!-- ProgrammingKnowledge -->
-          <div class="mt-5" data-aos="fade-down" id="ProgrammingKnowledge">
+          <div class="mt-5 card-deg" data-aos="fade-down" id="ProgrammingKnowledge">
+            <a href="https://www.youtube.com/c/ProgrammingKnowledge"><button class="my-btn">Get</button></a>
             <img id="img" class="style-scope yt-img-shadow" alt=""
               src="https://yt3.ggpht.com/ytc/AKedOLRcOeY51ucLoSfAZ8iD5O5MBiRVfaG5vYHGqKGA=s88-c-k-c0x00ffffff-no-rj">
             <h3 class="d-inline mx-2 card-title">ProgrammingKnowledge</h3>
-            <p class="h4 mt-2 card-text">Link:- <a href="https://www.youtube.com/c/ProgrammingKnowledge"
-                target="_blank">https://www.youtube.com/c/ProgrammingKnowledge</a></p>
+           
             <!-- channel information -->
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingEigth">
-                <button class="h1 accordion-button collapsed border border-dark bg-success text-light" type="button"
+                <button class="h1 accordion-button collapsed channel-info-button" type="button"
                   data-bs-toggle="collapse" data-bs-target="#collapseEigth" aria-expanded="false"
                   aria-controls="collapseEigth">
                   Channel Info
                 </button>
               </h2>
-              <div id="collapseEigth" class="border border-dark border-top-0 accordion-collapse collapse"
-                aria-labelledby="headingEigth" data-bs-parent="#accordionExample">
+              <div id="collapseEigth" class="accordion-collapse collapse" aria-labelledby="headingEigth"
+                data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   <button type="button" class="info mybtn">English language</button>
                   <button type="button" class="info mybtn">Python,Java,Game-Development etc.</button>
@@ -330,23 +367,23 @@
             </div>
           </div>
           <!-- Programming with Mosh -->
-          <div class="mt-5" data-aos="fade-down" id="Programming with Mosh">
+          <div class="mt-5 card-deg" data-aos="fade-down" id="Programming with Mosh">
+            <a href="https://www.youtube.com/c/programmingwithmosh"><button class="my-btn">Get</button></a>
             <img id="img" class="style-scope yt-img-shadow" alt=""
               src="https://yt3.ggpht.com/tBEPr-zTNXEeae7VZKSZYfiy6azzs9OHowq5ZvogJeHoVtKtEw2PXSwzMBKVR7W0MI7gyND8=s88-c-k-c0x00ffffff-no-rj">
             <h3 class="d-inline mx-2 card-title">Programming with Mosh</h3>
-            <p class="h4 mt-2 card-text">Link:- <a href="https://www.youtube.com/c/programmingwithmosh"
-                target="_blank">https://www.youtube.com/c/programmingwithmosh</a></p>
+      
             <!-- channel information -->
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingNine">
-                <button class="h1 accordion-button collapsed border border-dark bg-success text-light" type="button"
+                <button class="h1 accordion-button collapsed channel-info-button" type="button"
                   data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false"
                   aria-controls="collapseNine">
                   Channel Info
                 </button>
               </h2>
-              <div id="collapseNine" class="border border-dark border-top-0 accordion-collapse collapse"
-                aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+              <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
+                data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   <button type="button" class="info mybtn">English language</button>
                   <button type="button" class="info mybtn">Python,Java,Web-Development,All-About-Tech etc.</button>
@@ -356,23 +393,23 @@
             </div>
           </div>
           <!-- The Geek Monk -->
-          <div class="mt-5" data-aos="fade-down" id="The Geek Monk">
+          <div class="mt-5 card-deg" data-aos="fade-down" id="The Geek Monk">
+            <a href="https://www.youtube.com/channel/UCf0tk1ZU6QX3waEJqxHhHOA"><button class="my-btn">Get</button></a>
             <img id="img" class="style-scope yt-img-shadow" alt=""
               src="https://yt3.ggpht.com/ytc/AKedOLT8VVTMaSN1XA1S3FS3nKECBhWkILBrddcRv32wJA=s88-c-k-c0x00ffffff-no-rj">
             <h3 class="d-inline mx-2 card-title">The Geek Monk</h3>
-            <p class="h4 mt-2 card-text">Link:- <a href="https://www.youtube.com/channel/UCf0tk1ZU6QX3waEJqxHhHOA"
-                target="_blank">https://www.youtube.com/channel/UCf0tk1ZU6QX3waEJqxHhHOA</a></p>
+            
             <!-- channel information -->
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingTen">
-                <button class="h1 accordion-button collapsed border border-dark bg-success text-light" type="button"
+                <button class="h1 accordion-button collapsed channel-info-button" type="button"
                   data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false"
                   aria-controls="collapseTen">
                   Channel Info
                 </button>
               </h2>
-              <div id="collapseTen" class="border border-dark border-top-0 accordion-collapse collapse"
-                aria-labelledby="headingTen" data-bs-parent="#accordionExample">
+              <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen"
+                data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   <button type="button" class="info mybtn">Hindi language</button>
                   <button type="button"
@@ -383,23 +420,23 @@
             </div>
           </div>
           <!-- mybigguide -->
-          <div class="mt-5" data-aos="fade-down" id="mybigguide">
+          <div class="mt-5 card-deg" data-aos="fade-down" id="mybigguide">
+            <a href="https://www.youtube.com/user/mybigguidehindi"><button class="my-btn">Get</button></a>
             <img id="img" class="style-scope yt-img-shadow" alt=""
               src="https://yt3.ggpht.com/XodMa2EH9u1t8Wmr2xUS3gonKrOuldveBJ0qcV_P9kWkrC6waNDCIpiMVjtqMkeYtO7pjqdWtg=s88-c-k-c0x00ffffff-no-rj">
             <h3 class="d-inline mx-2 card-title">mybigguide</h3>
-            <p class="h4 mt-2 card-text">Link:- <a href="https://www.youtube.com/user/mybigguidehindi"
-                target="_blank">https://www.youtube.com/user/mybigguidehindi</a></p>
+           
             <!-- channel information -->
             <div class="accordion-item">
               <h2 class="accordion-header" id="heading-11">
-                <button class="h1 accordion-button collapsed border border-dark bg-success text-light" type="button"
+                <button class="h1 accordion-button collapsed channel-info-button" type="button"
                   data-bs-toggle="collapse" data-bs-target="#collapse-11" aria-expanded="false"
                   aria-controls="collapse-11">
                   Channel Info
                 </button>
               </h2>
-              <div id="collapse-11" class="border border-dark border-top-0 accordion-collapse collapse"
-                aria-labelledby="heading-11" data-bs-parent="#accordionExample">
+              <div id="collapse-11" class="accordion-collapse collapse" aria-labelledby="heading-11"
+                data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   <button type="button" class="info mybtn">Hindi language</button>
                   <button type="button" class="info mybtn">Computer-Basics,MS-Office,Information-Technology
@@ -410,23 +447,23 @@
             </div>
           </div>
           <!-- MySirG.com -->
-          <div class="mt-5" data-aos="fade-down" id="MySirG.com">
+          <div class="mt-5 card-deg" data-aos="fade-down" id="MySirG.com">
+            <a href="https://www.youtube.com/user/saurabhexponent1"><button class="my-btn">Get</button></a>
             <img id="img" class="style-scope yt-img-shadow" alt=""
               src="https://yt3.ggpht.com/ytc/AKedOLR2TkYUWF_sBcjq9Wpw_AMWB5R9AR8W1JGSik8a=s88-c-k-c0x00ffffff-no-rj">
             <h3 class="d-inline mx-2 card-title">MySirG.com</h3>
-            <p class="h4 mt-2 card-text">Link:- <a href="https://www.youtube.com/user/saurabhexponent1"
-                target="_blank">https://www.youtube.com/user/saurabhexponent1</a></p>
+        
             <!-- channel information -->
             <div class="accordion-item">
               <h2 class="accordion-header" id="heading-12">
-                <button class="h1 accordion-button collapsed border border-dark bg-success text-light" type="button"
+                <button class="h1 accordion-button collapsed channel-info-button" type="button"
                   data-bs-toggle="collapse" data-bs-target="#collapse-12" aria-expanded="false"
                   aria-controls="collapse-12">
                   Channel Info
                 </button>
               </h2>
-              <div id="collapse-12" class="border border-dark border-top-0 accordion-collapse collapse"
-                aria-labelledby="heading-12" data-bs-parent="#accordionExample">
+              <div id="collapse-12" class="accordion-collapse collapse" aria-labelledby="heading-12"
+                data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   <button type="button" class="info mybtn">Hindi language</button>
                   <button type="button" class="info mybtn">C-Language,CPP,Programming,Tech etc.</button>
@@ -436,23 +473,23 @@
             </div>
           </div>
           <!-- Dev Ed -->
-          <div class="mt-5" data-aos="fade-down" id="Dev Ed">
+          <div class="mt-5 card-deg" data-aos="fade-down" id="Dev Ed">
+            <a href="https://www.youtube.com/c/DevEd"><button class="my-btn">Get</button></a>
             <img id="img" class="style-scope yt-img-shadow" alt=""
               src="https://yt3.ggpht.com/ytc/AKedOLSB-oR-xmvVSZXJ3gbK12uvv0AJUvajwxMie_R_uw=s88-c-k-c0x00ffffff-no-rj">
             <h3 class="d-inline mx-2 card-title">Dev Ed</h3>
-            <p class="h4 mt-2 card-text">Link:- <a href="https://www.youtube.com/c/DevEd"
-                target="_blank">https://www.youtube.com/c/DevEd</a></p>
+         
             <!-- channel information -->
             <div class="accordion-item">
               <h2 class="accordion-header" id="heading-13">
-                <button class="h1 accordion-button collapsed border border-dark bg-success text-light" type="button"
+                <button class="h1 accordion-button collapsed channel-info-button" type="button"
                   data-bs-toggle="collapse" data-bs-target="#collapse-13" aria-expanded="false"
                   aria-controls="collapse-13">
                   Channel Info
                 </button>
               </h2>
-              <div id="collapse-13" class="border border-dark border-top-0 accordion-collapse collapse"
-                aria-labelledby="heading-13" data-bs-parent="#accordionExample">
+              <div id="collapse-13" class="accordion-collapse collapse" aria-labelledby="heading-13"
+                data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   <button type="button" class="info mybtn">English language</button>
                   <button type="button" class="info mybtn">Coding,Design,Multimedia,Programming,Tech etc.</button>
@@ -462,23 +499,23 @@
             </div>
           </div>
           <!-- Coding Master -->
-          <div class="mt-5" data-aos="fade-down" id="Coding Master">
+          <div class="mt-5 card-deg" data-aos="fade-down" id="Coding Master">
+            <a href="https://www.youtube.com/c/CodingMasterYt"><button class="my-btn">Get</button></a>
             <img id="img" class="style-scope yt-img-shadow" alt=""
               src="https://yt3.ggpht.com/ytc/AKedOLS7UU5sY4FD-tPBIntH6B6mBFCl3ybjHDwrmr9f=s88-c-k-c0x00ffffff-no-rj">
             <h3 class="d-inline mx-2 card-title">Coding Master</h3>
-            <p class="h4 mt-2 card-text">Link:- <a href="https://www.youtube.com/c/CodingMasterYt"
-                target="_blank">https://www.youtube.com/c/CodingMasterYt</a></p>
+          
             <!-- channel information -->
             <div class="accordion-item">
               <h2 class="accordion-header" id="heading-14">
-                <button class="h1 accordion-button collapsed border border-dark bg-success text-light" type="button"
+                <button class="h1 accordion-button collapsed channel-info-button" type="button"
                   data-bs-toggle="collapse" data-bs-target="#collapse-14" aria-expanded="false"
                   aria-controls="collapse-14">
                   Channel Info
                 </button>
               </h2>
-              <div id="collapse-14" class="border border-dark border-top-0 accordion-collapse collapse"
-                aria-labelledby="heading-14" data-bs-parent="#accordionExample">
+              <div id="collapse-14" class="accordion-collapse collapse" aria-labelledby="heading-14"
+                data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   <button type="button" class="info mybtn">English language</button>
                   <button type="button" class="info mybtn">Web-Development,Design,HTML,CSS,JS etc.</button>
@@ -488,23 +525,23 @@
             </div>
           </div>
           <!-- Tech Gun -->
-          <div class="mt-5" data-aos="fade-down" id="Tech Gun">
+          <div class="mt-5 card-deg" data-aos="fade-down" id="Tech Gun">
+            <a href="https://www.youtube.com/c/TechGun"><button class="my-btn">Get</button></a>
             <img id="img" class="style-scope yt-img-shadow" alt=""
               src="https://yt3.ggpht.com/ytc/AKedOLR6yZq47np8hi1ApAfOrRNXQUTnRJBNKMFV6htaKw=s88-c-k-c0x00ffffff-no-rj">
             <h3 class="d-inline mx-2 card-title">Tech Gun</h3>
-            <p class="h4 mt-2 card-text">Link:- <a href="https://www.youtube.com/c/TechGun"
-                target="_blank">https://www.youtube.com/c/TechGun</a></p>
+           
             <!-- channel information -->
             <div class="accordion-item">
               <h2 class="accordion-header" id="heading-15">
-                <button class="h1 accordion-button collapsed border border-dark bg-success text-light" type="button"
+                <button class="h1 accordion-button collapsed channel-info-button" type="button"
                   data-bs-toggle="collapse" data-bs-target="#collapse-15" aria-expanded="false"
                   aria-controls="collapse-15">
                   Channel Info
                 </button>
               </h2>
-              <div id="collapse-15" class="border border-dark border-top-0 accordion-collapse collapse"
-                aria-labelledby="heading-15" data-bs-parent="#accordionExample">
+              <div id="collapse-15" class="accordion-collapse collapse" aria-labelledby="heading-15"
+                data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   <button type="button" class="info mybtn">Hindi language</button>
                   <button type="button" class="info mybtn">Web-Development,Programming,Coding,Information-Technology
